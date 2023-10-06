@@ -8,6 +8,7 @@ int main() {
 	vector <studentas> grupe;
 	for (int i = 0; i < 1; i++) {
 		studentas K; 
+		cin >> K;
 		grupe.push_back(K); 
 		K.~studentas(); 
 	}
@@ -20,6 +21,7 @@ int main() {
 	cout << endl;
 	printf("|%-10s|%20s|", "Vardas", "Pavarde");
 	printf("%10s\n", skaiciavimo_Strategija == 'm' ? "Galutinis(m)" : "Galutinis (v)");
-	for (auto& a : grupe) a.printasRez();
+	//for (auto& a : grupe) a.printasRez();
+	for (auto& a : grupe) cout << a;
 	system("pause");
 }

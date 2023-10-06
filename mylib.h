@@ -47,6 +47,10 @@ public:
 	void rezVid();
 	void rezMed();
 
+	friend std::istream& operator>>(std::istream& in, studentas& a);
+
+	friend std::ostream& operator<<(std::ostream& out, const studentas& a);
+
 	double mediana(vector<int> vec);
 	//double galBalas(double egzaminas, const vector<double>& nd, double (*kriterijus)(vector<double>) = mediana);
 
